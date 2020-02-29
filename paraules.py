@@ -1,20 +1,29 @@
 import random
 
 # Llegim l'arxiu de paraules per línies
-# ... codi aquí ...
+arxiu = open("paraules.txt", "r")
+linies = arxiu.readlines()
+arxiu.close
 
 # Treiem el salt de línia final de cada línia
-# ... codi aquí ...
+linies = [linia.replace("\n", "") for linia in lines]
 
 # Creem la llista llista_paraules on cada element és una llista de dos elements [tipus_paraula, paraula]
-# ... codi aquí ...
+llista_paraules = []
+for linia in linies:
+	llista_paraules.append(linia.split(":"))
 
 
 # Retorna una paraula de la llista demanera aleatoria
 # Elimina la paraula de la llista
 # Retorna un "None" si ja no queden paraules
 def retorna_paraula():
-    pass
+	if len(llista_paraules) == 0:
+		return None	
+	else:
+		paraula = random.choice(llista_paraules)
+		llista_paraules.remove(paraula)
+		return paraula
 
 
 # Dibuixa per pantalla la pista (Tipus de x lletres)
