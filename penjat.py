@@ -65,7 +65,7 @@ while joc:
 paraules_encertades = 9
 nom = "Pepe"
 puntuacions.nova_puntuacio(nom, paraules_encertades)
-mes_canvis =  "prova"
+mes_canvis =  "mes proves"
 
 # Mostrem puntuacions
 # ... codi aquí ...
