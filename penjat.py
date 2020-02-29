@@ -63,7 +63,7 @@ while joc:
 
 # Guardem puntuació
 paraules_encertades = 8
-nom = Aina
+nom = "Aina"
 puntuacions.nova_puntuacio(nom, paraules_encertades)
 
 # Mostrem puntuacions
