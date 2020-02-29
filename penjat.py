@@ -62,7 +62,9 @@ while joc:
         nova_lletra(input("Introdueix una lletra: "))
 
 # Guardem puntuació
-# ... codi aquí ...
+nom = "Toni"
+paraules = 10
+puntuacions.nova_puntuacio(nom, paraules)
 
 # Mostrem puntuacions
 # ... codi aquí ...
